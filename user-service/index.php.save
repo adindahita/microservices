@@ -1,0 +1,8 @@
+<?php
+require __DIR__ .'/vendor/autoload.php';
+
+use PhpAmqpLib\Connection\AMQPStreamConnection;
+use PhpAmqpLib\Message\AMQMessage;
+
+// Koneksi ke RabbitMQ
+$connection = new AMQPStreamConnection ('rabbitmq', 5672, 'guest', 'guest
